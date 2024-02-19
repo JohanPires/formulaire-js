@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form">
+      <div>
+        <input name="firstName" type="text" id="firstName" placeholder="Nom" />
+      </div>
+      <div>
+        <input name="lastName" type="text" id="lastName" placeholder="Prénom" />
+      </div>
+      <div>
+        <input name="age" type="number" id="age" placeholder="Age" />
+        <span id="spanNumber">L'age ne peut pas être négatif</span>
+      </div>
+      <div>
+        <div class="radio-container">
+          <select name="genre" id="genre">
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <input name="email" type="email" id="email" placeholder="Email" />
+        <span id="spanEmail">Cette email n'est pas valable</span>
+      </div>
+      <div>
+        <input name="adress" type="text" id="adress" placeholder="Adresse" />
+        <span id="spanAdress">Cette adresse n'est pas valide</span>
+      </div>
+      <div>
+        <input name="code" type="text" id="code" placeholder="Code Postal" />
+        <span id="spanCode">Ce code Postal n'est pas valide</span>
+      </div>
+      <div>
+        <select name="ville" id="ville">
+          <option value="paris">Paris</option>
+          <option value="marseille">Marseille</option>
+          <option value="lyon">Lyon</option>
+          <option value="toulouse">Toulouse</option>
+          <option value="nice">Nice</option>
+          <option value="nantes">Nantes</option>
+          <option value="strasbourg">Strasbourg</option>
+          <option value="montpellier">Montpellier</option>
+          <option value="bordeaux">Bordeaux</option>
+          <option value="lille">Lille</option>
+        </select>
+      </div>
+      <div>
+        <select name="metier" id="metier">
+          <option value="developpeur">Développeur</option>
+          <option value="designer">Designer</option>
+          <option value="ingenieur">Ingénieur</option>
+          <option value="enseignant">Enseignant</option>
+          <option value="medecin">Médecin</option>
+          <option value="avocat">Avocat</option>
+          <option value="comptable">Comptable</option>
+          <option value="artisan">Artisan</option>
+          <option value="architecte">Architecte</option>
+        </select>
+      </div>
+      <div>
+        <select name="nationalite" id="nationalite">
+          <option value="francaise">Française</option>
+          <option value="americaine">Américaine</option>
+          <option value="britannique">Britannique</option>
+          <option value="allemande">Allemande</option>
+          <option value="italienne">Italienne</option>
+          <option value="espagnole">Espagnole</option>
+          <option value="chinoise">Chinoise</option>
+          <option value="japonaise">Japonaise</option>
+          <option value="canadienne">Canadienne</option>
+          <option value="australienne">Australienne</option>
+        </select>
+      </div>
+      <div>
+        <label for="birthday">Date de Naissance</label>
+        <input
+          name="birthday"
+          type="date"
+          id="birthday"
+          placeholder="Date de Naissance"
+        />
+      </div>
+      <div>
+        <input
+          name="place"
+          type="text"
+          id="place"
+          placeholder="Lieu de Naissance"
+        />
+      </div>
+      <div>
+        <input
+          name="security"
+          type="text"
+          id="security"
+          placeholder="Numéro de Sécurité Social"
+        />
+        <span id="spanSecurity"
+          >Ce numéro de sécurité social n'est pas valide</span
+        >
+      </div>
+      <div>
+        <input
+          name="passeport"
+          type="text"
+          id="passeport"
+          placeholder="Numéro de passeport"
+        />
+      </div>
+      <div>
+        <label for="passeportDate">Date de délivrance du Passeport</label>
+        <input
+          name="passeportDate"
+          type="date"
+          id="passeportDate"
+          placeholder="Date de délivrance du passeport"
+        />
+      </div>
+      <div>
+        <label for="passeportDateEnd"
+          >Date de fin de Validité du Passeport</label
+        >
+        <input
+          name="passeportDateEnd"
+          type="date"
+          id="passeportDateEnd"
+          placeholder="Date de Validité du Passeport"
+        />
+        <span id="spanDate"
+          >La date de fin doit être inférieur à la date de début
+        </span>
+      </div>
+      <div>
+        <input type="submit" id="submitButton" value="Envoyer" />
+        <span id="emptyCheckSpan">Remplisser tout les champs</span>
+      </div>
+    </form>
+
+    <script src="./index2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#spanEmail {
+  color: transparent;
+}
+#spanCode {
+  color: transparent;
+}
+#spanSecurity {
+  color: transparent;
+}
+#spanDate {
+  color: transparent;
+}
+#emptyCheckSpan {
+  color: transparent;
+}
+#spanNumber {
+  color: transparent;
+}
+#spanAdress {
+  color: transparent;
+}
+
+.color {
+  background: rgba(169, 6, 6, 0.541);
+}
