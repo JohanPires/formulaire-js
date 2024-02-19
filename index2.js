@@ -13,6 +13,8 @@ let inputsChecker = false;
 
 let arrayChecker = [];
 
+let dataArray = [];
+
 const sendForm = () => {
   // Check si les paramétres ne sont pas vide
   arrayChecker = [];
@@ -106,7 +108,8 @@ const sendForm = () => {
     let formData = new FormData(form);
     let data = Object.fromEntries(formData);
     let jsonData = JSON.stringify(data);
-    console.log(jsonData);
+    dataArray.push(data);
+    console.log(dataArray);
   }
 };
 
