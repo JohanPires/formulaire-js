@@ -9,6 +9,8 @@ let checkEmail = true;
 let checkCode = true;
 let checkSecurity = true;
 let checkDate = true;
+let checkAge = true;
+let checkPass = true;
 let inputsChecker = false;
 
 let arrayChecker = [];
@@ -47,8 +49,10 @@ const sendForm = () => {
   //   check si l'age est supérieur à 0
 
   if (age.value > 0) {
+    checkAge = true;
     spanNumber.style.color = "transparent";
   } else {
+    checkAge = false;
     spanNumber.style.color = "red";
   }
 
@@ -98,16 +102,27 @@ const sendForm = () => {
     spanDate.style.color = "red";
   }
 
+  // check passport
+  if (passeport.value.match(/^[A-Z]{2}[0-9]{7}$/)) {
+    checkPas = true;
+    spanPass.style.color = "transparent";
+  } else {
+    checkPass = false;
+    spanPass.style.color = "red";
+  }
+  // récupération des donnés sous forme d'objet
+
   if (
     checkEmail &&
     checkCode &&
     checkSecurity &&
     checkDate &&
+    checkAge &&
+    checkPass &&
     !arrayChecker.includes(true)
   ) {
     let formData = new FormData(form);
     let data = Object.fromEntries(formData);
-    let jsonData = JSON.stringify(data);
     dataArray.push(data);
     console.log(dataArray);
   }

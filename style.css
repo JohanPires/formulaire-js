@@ -37,6 +37,9 @@ form div {
 #spanAdress {
   color: transparent;
 }
+#spanPass {
+  color: transparent;
+}
 
 .color {
   background: rgba(169, 6, 6, 0.541);
